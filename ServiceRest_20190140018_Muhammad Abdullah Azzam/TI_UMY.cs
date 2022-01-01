@@ -39,7 +39,7 @@ namespace ServiceRest_20190140018_Muhammad_Abdullah_Azzam
         public List<Mahasiswa> GetAllMahasiswa()
         {
             List<Mahasiswa> mahas = new List<Mahasiswa>();
-            SqlConnection con = new SqlConnection("Data Source = LAPTOP-GVH5477F; Initial Catalog = \"TI UMY\"; Persist Security Info = True; User ID = sa; Password = bima071200");
+            SqlConnection con = new SqlConnection("Data Source = LAPTOP-DLAHRDFG; Initial Catalog = \"TI UMY\"; Persist Security Info = True; User ID = sa; Password = Azzam1234");
             string query = "select Nama, NIM, Prodi, Angkatan from dbo.Mahasiswa";
             SqlCommand com = new SqlCommand(query, con);    //yang dikirim ke sql
             try
@@ -70,7 +70,7 @@ namespace ServiceRest_20190140018_Muhammad_Abdullah_Azzam
         public Mahasiswa GetMahasiswaByNIM(string nim)
         {
             Mahasiswa mhs = new Mahasiswa();
-            SqlConnection con = new SqlConnection("Data Source = LAPTOP-GVH5477F; Initial Catalog = \"TI UMY\"; Persist Security Info = True; User ID = sa; Password = bima071200");
+            SqlConnection con = new SqlConnection("Data Source = LAPTOP-DLAHRDFG; Initial Catalog = \"TI UMY\"; Persist Security Info = True; User ID = sa; Password = Azzam1234");
             string query = string.Format("select Nama, NIM, Prodi, Angkatan from dbo.Mahasiswa where NIM = '{0}'", nim);
             SqlCommand com = new SqlCommand(query, con);
             try
